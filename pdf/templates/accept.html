@@ -1,0 +1,58 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+        <link rel="stylesheet" href="{% static "accept.css" %}">
+        <title>Resume Generator</title>
+    </head>
+    <body>
+        <div class="Box-container">
+            <center><h1><i>Resume Generator</i>  </h1></center>    
+            <center><h4>Please fill out your details</h4></center>
+            <form method = "POST" >
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name = "name" placeholder="Enter Your Name">   
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" class="form-control" id="phone" name = "phone" placeholder="Enter Your Contact Number">   
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" name = "email" placeholder="Enter Your Email ID">   
+                </div>
+                <div class="form-group">
+                    <label for="school">School</label>
+                    <input type="text" class="form-control" id="school" name = "school" placeholder="Enter Your School Name">   
+                </div>
+                <div class="form-group">
+                    <label for="degree"> Degree </label>
+                    <input type="text" class="form-control" id="degree" name = "degree" placeholder="Eg. BE/BTech,ME,MBA,M.Com,MCA">   
+                </div>
+                <div class="form-group">
+                    <label for="university"> University </label>
+                    <input type="text" class="form-control" id="university" name = "university" placeholder="Eg. Mumbai University">   
+                </div>
+                <div class="form-group">
+                    <label for="skill">Skills</label>
+                    <textarea type="text" class="form-control" id="skill" name = "skill" placeholder="Eg. C,C++,GNS3,Python,Javascript"></textarea>   
+                </div>
+                <div class="form-group">
+                    <label for="about_you">About you</label>
+                    <textarea type="text" class="form-control" id="about_you" name = "about_you" placeholder="Write Something about you"></textarea>   
+                </div>
+                <div class="form-group">
+                    <label for="previous_work"> Previous Work </label>
+                    <textarea type="text" class="form-control" id="previous_work" name = "previous_work" placeholder="Write Something about your previous work"></textarea>   
+                </div>
+                <button type="submit" class="btn">Submit</button>
+                <center><h4>&copy; Copyright 2021 Sanmesh Yashwantrao</h4></center>
+            </form>
+        </div>
+    </body>
+</html>

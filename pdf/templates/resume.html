@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>Document</title>
+    <head>
+    <body>
+        <br>
+        <br>
+        <br>
+            <center><h3 style="background-color:lavender;">Personal Details</h3></center>
+            <em>
+            <h5>Name : {{user_profile.name}}</h5>
+            <h5>Contact No : {{user_profile.phone}}</h5>
+            <h5>Email Id : {{user_profile.email}}</h5>
+            </em>
+        <br>
+        <br>
+            <center><h3 style="background-color:lavender;">Skills</h3></center>
+            <em>
+            <h5>Skills : {{user_profile.skill}}</h5>
+            </em>
+        <br>
+        <br>
+            <center><h3 style="background-color:lavender;">Educational Details</h3></center>
+            <ul>
+            <em>
+                <h5><li>School : {{user_profile.school}}</li></h5>
+                <h5><li>Degree : {{user_profile.degree}}</li></h5>
+                <h5><li>University : {{user_profile.university}}</li></h5>
+            </em>
+            </ul>
+        <br>
+        <br>
+            <center><h3 style="background-color:lavender;">About</h3></center>
+            <em>
+            <h5>{{user_profile.about_you}}</h5>
+            </em>
+        <br>
+        <br>
+            <center><h3 style="background-color:lavender;">Work Details</h3></center>
+            <em>
+            <h5>{{user_profile.previous_work}}</h5>
+    </body>
+</html>
