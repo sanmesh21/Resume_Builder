@@ -22,4 +22,4 @@ urlpatterns = [
     path('<int:id>/',views.resume,name="resume"),
     path('list/',views.list,name="list") 
 ]
-ALLOWED_HOSTS = ['<url>']
+
